@@ -1,0 +1,94 @@
+@font-face
+{
+	font-family: DidactGothic;
+	src: url(../fonts/DidactGothic.ttf);
+}
+
+p
+{
+	font-family: DidactGothic;
+	font-size: 20px;
+	letter-spacing: normal;
+	text-transform: none;
+	color: white;
+	text-shadow: 1px 1px 1px grey;
+	text-align: justify;
+	font-variant: normal;
+}
+
+td
+{
+	font-family: DidactGothic;
+	font-size: 20px;
+	letter-spacing: normal;
+	text-transform: none;
+	color: white;
+	text-shadow: 1px 1px 1px grey;
+	text-align: justify;
+	font-variant: normal;
+}
+
+p i
+{	
+	text-decoration: underline;
+	text-shadow: none;
+}
+
+h3
+{
+	font-family: DidactGothic;
+	font-size: 24px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+h2
+{
+	font-family: DidactGothic;
+	font-size: 24px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+	margin-left: 10%;
+}
+
+h1
+{
+	font-family: DidactGothic;
+	font-size: 28px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
+}
+
+a[href^="https://"]{ 
+    font-weight: bold;
+    text-decoration: none;
+    color:#b3d9ff;
+}
+a[href^="https://"]:hover {text-decoration: underline;}
+
+ul li
+{
+	font-family: DidactGothic;
+	font-size: 20px;
+	color: white;
+	text-shadow: 1px 1px 1px grey;
+	list-style-type: upper-roman;
+}
+
+.help {
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+}
+
+.help:hover::after {
+	content: attr(data-title);
+	position: absolute;
+	left: 0; 
+	top: 100%; 
+	background-color: black;
+	font-family: DidactGothic;
+	font-size: 16px;
+	padding: 5px 10px;
+	border: 1px solid white;
+}

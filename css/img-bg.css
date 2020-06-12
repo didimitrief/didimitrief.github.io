@@ -1,0 +1,188 @@
+﻿@font-face
+{
+	font-family: EtelkaLightPro;
+	src: url(../fonts/EtelkaLightPro.ttf);
+}
+
+body
+{
+	background-color: black;
+	background-image: url(../image/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+body.menu
+{
+	background:radial-gradient(circle farthest-corner at 100px 50px, #000000, #696969);
+}
+
+div.panel
+{
+	width: 80%;
+	padding: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	border: solid 1px white;
+	border-radius: 4px;
+    background-color: rgba(64, 64, 64,0.9);
+}
+.buttons
+{
+	margin:10px;
+	margin-right: 8.5%;
+}
+
+
+h3 + img{
+	display: block;
+    margin: auto;
+    width: 80%;
+    height: auto;
+    border: solid 1px white;
+}
+
+img.god
+{
+	margin-left: 20px;
+	width: 300px;
+	height: auto;
+}
+
+/*-------Gallery image-------*/
+
+th img{
+	margin: 15px 20px;
+    width: 300px;
+    border: 1px solid #c8ccd1;
+    margin: 10px;
+    position: static;
+    transition: transform 1s ease;
+}
+
+th img:hover {transform: scale(2);}
+
+/*-------ADD flex-------*/
+
+.parent {
+
+	display: flex;
+	width: 83%;
+	flex-wrap: wrap;
+    text-align: justify;
+    margin: auto;
+    align-items: flex-start;
+	border: solid 1px white;
+	border-radius: 2px;
+    background-color: rgba(64, 64, 64,0.9);
+}
+
+.child {
+	border-top: solid 1px white;
+	padding: 20px;
+	flex: 45%;
+}
+
+.child img
+{
+	width: 100%;
+	height: auto;
+}
+
+img.gif
+{
+	display: block;
+	width: 200px;
+	height: auto;
+	margin: auto;
+}
+
+/*-------HEAD-------*/
+header {
+ 	width: 100%;
+ 	background:radial-gradient(circle, #ffffff 50%, #000000 100%);
+}
+
+div.header {
+    display: flex;
+    min-width: 250px;
+    margin-left: 100px;
+}
+
+.menu {
+	font-family: EtelkaLightPro;
+	justify-content: center;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	width:80%;
+	background:radial-gradient(circle, rgb(0,0,0) 50%, rgb(255,255,255) 100%);
+    border: solid 1px white;
+    border-top: 0;
+}
+.menu li {display: flex;}
+
+.menu a {
+	margin:3px;
+	border: inset 1px #303032;
+	border-radius: 3px;
+	text-decoration:none;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: black;
+	padding: 15px 20px; /*Верхний, нижний*/
+	background-color: white;
+}
+
+.menu a:hover {
+	padding: 14px 20px;
+	border: inset 1px #040404;
+	background-color: #80bfff;
+	box-shadow: 2px 2px #ffffff;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 56px;
+}
+
+.submenu a {
+    display: flex;
+    font-size: 16px;
+	width:200px;
+}
+.menu li:hover > .submenu {display: block;}
+
+.dance
+{
+	animation-name: dance;
+	animation-duration: 2s; 
+    animation-timing-function: ease; 
+    animation-iteration-count:infinite;
+}
+
+@keyframes dance {
+    0% {
+        transform: translateX(-10%);
+    }
+    25%{
+        transform: translateX(10%);
+    }
+    50%{
+        transform: translateX(-10%);
+    }
+    75%{
+        transform: translateX(10%);
+    }   
+    100% {
+        transform: translateX(-10%);
+    }   
+}
+
+.time tr
+{
+	text-align: center;
+}

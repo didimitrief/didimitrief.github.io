@@ -1,0 +1,22 @@
+div {
+	text-align: center;
+	width: 60em;
+	background-color: grey;
+}
+
+table {width: 100%;}
+td {width: 50%;}
+
+h1 {
+	background-color: #BBBBBB;
+	text-decoration: none;
+}
+
+.about{
+	text-align: left;
+	padding-left: 100px;
+}
+
+.in{text-align: left;}
+
+.history{border: 1px solid black;}
